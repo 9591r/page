@@ -88,9 +88,7 @@ function updateActiveSection(index) {
   });
 
   currentLabel.textContent = sectionNumber(index);
-  document.title =
-    (index === 0 ? "Social Signal 09" : section.dataset.title) +
-    " — Signal 09";
+  document.title = index === 0 ? "9591r" : section.dataset.title + " — 9591r";
 
   updateSceneBrand({
     name: section.dataset.brand,

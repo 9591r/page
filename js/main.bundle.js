@@ -31096,7 +31096,7 @@ void main() {
       }
     });
     currentLabel.textContent = sectionNumber(index);
-    document.title = (index === 0 ? "Social Signal 09" : section.dataset.title) + " \u2014 Signal 09";
+    document.title = index === 0 ? "9591r" : section.dataset.title + " \u2014 9591r";
     updateSceneBrand({
       name: section.dataset.brand,
       color,

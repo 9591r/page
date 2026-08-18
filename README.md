@@ -8,11 +8,11 @@ neon scene that changes with each social channel.
 
 Open index.html and replace these five values:
 
-- https://github.com/yourusername
-- https://facebook.com/yourusername
-- https://instagram.com/yourusername
-- https://youtube.com/@yourchannel
-- https://twitch.tv/yourusername
+- https://github.com/9591r
+- https://facebook.com/ruben.9591
+- https://instagram.com/9591r
+- https://youtube.com/@9592r
+- https://twitch.tv/9592r
 
 The summaries and channel labels are in the same social sections.
 
