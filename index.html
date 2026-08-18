@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="9591r — a neon, interactive collection of social channels."
+    />
+    <meta name="theme-color" content="#05070d" />
+    <title>9591r</title>
+    <link
+      id="site-favicon"
+      rel="icon"
+      href="assets/images/logo-9.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-active-section="0">
+    <a class="skip-link" href="#github">Skip to social links</a>
+
+    <canvas id="neon-scene" aria-hidden="true"></canvas>
+
+    <div class="atmosphere" aria-hidden="true">
+      <div class="atmosphere__glow atmosphere__glow--one"></div>
+      <div class="atmosphere__glow atmosphere__glow--two"></div>
+      <div class="atmosphere__grid"></div>
+      <div class="atmosphere__noise"></div>
+    </div>
+
+    <header class="site-header" aria-label="Site header">
+      <a class="mini-brand" href="#home" aria-label="9591r home">
+        <img src="assets/images/logo-9.svg" alt="" width="38" height="38" />
+        <span><br />9591r</span>
+      </a>
+      <p class="site-header__status">
+        <span class="status-light" aria-hidden="true"></span>
+        Broadcast online
+      </p>
+    </header>
+
+    <nav class="section-nav" aria-label="Section navigation">
+      <div class="section-nav__rail" id="section-nav"></div>
+    </nav>
+
+    <p class="section-count" aria-live="polite">
+      <span id="current-section">01</span>
+      <span aria-hidden="true"> / </span>
+      <span class="sr-only">of</span>
+      <span id="total-sections">06</span>
+    </p>
+
+    <main id="main-content">
+      <section
+        class="panel panel--hero is-active"
+        id="home"
+        data-title="Home"
+        data-brand="nine"
+        data-color="#54d8ff"
+        data-side="center"
+        aria-labelledby="hero-title"
+      >
+        <div class="image-shards" aria-hidden="true">
+          <figure class="image-shard image-shard--one">
+            <img src="assets/images/neon-9-reference.png" alt="" />
+          </figure>
+          <figure class="image-shard image-shard--two">
+            <img src="assets/images/neon-9-reference.png" alt="" />
+          </figure>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Personal frequencies · One signal</p>
+          <h1 class="glitch" id="hero-title" data-text="9591R">
+            9591R
+          </h1>
+          <p class="hero-copy__intro">
+            Five channels. One identity. Scroll once to tune into the next
+            transmission.
+          </p>
+        </div>
+
+        <button class="scroll-cue" type="button" data-scroll-next>
+          <span>Enter the signal</span>
+          <svg viewBox="0 0 20 28" aria-hidden="true">
+            <path d="M10 1v23M3 17l7 7 7-7" />
+          </svg>
+        </button>
+      </section>
+
+      <section
+        class="panel panel--social"
+        id="github"
+        data-title="GitHub"
+        data-brand="github"
+        data-color="#8957e5"
+        data-side="right"
+        aria-labelledby="github-title"
+      >
+        <article class="social-copy social-copy--left">
+          <p class="eyebrow">01 · Open source frequency</p>
+          <h2 id="github-title">GitHub</h2>
+          <p class="social-copy__lead">
+            Experiments, useful tools, and the code behind the ideas. Follow
+            the build process from first commit to final release.
+          </p>
+          <p class="social-copy__meta">Code · Projects · Experiments</p>
+          <a
+            class="signal-link"
+            href="https://github.com/9591r"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <div class="mesh-fallback" aria-hidden="true">
+          <span class="mesh-fallback__orb"></span>
+          <svg class="mesh-fallback__mark mesh-fallback__icon" viewBox="0 0 24 24" role="img" aria-label="GitHub">
+            <path fill-rule="evenodd" d="M12,2A10,10 0,0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21V19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26V21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0,0,0 12,2Z" />
+          </svg>
+        </div>
+        <p class="giant-label" aria-hidden="true">GITHUB</p>
+      </section>
+
+      <section
+        class="panel panel--social"
+        id="facebook"
+        data-title="Facebook"
+        data-brand="facebook"
+        data-color="#1877f2"
+        data-side="left"
+        aria-labelledby="facebook-title"
+      >
+        <article class="social-copy social-copy--right">
+          <p class="eyebrow">02 · Community frequency</p>
+          <h2 id="facebook-title">Facebook</h2>
+          <p class="social-copy__lead">
+            Longer updates, shared moments, and conversations with the people
+            around the signal.
+          </p>
+          <p class="social-copy__meta">Updates · Community · Stories</p>
+          <a
+            class="signal-link"
+            href="https://facebook.com/ruben.9591"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Facebook <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <div class="mesh-fallback" aria-hidden="true">
+          <span class="mesh-fallback__orb"></span>
+          <svg class="mesh-fallback__mark mesh-fallback__icon" viewBox="0 0 24 24" role="img" aria-label="Facebook">
+            <path d="M19,4V7H17A1,1 0,0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4C17.33,4 18.16,4.14 19,4Z" />
+          </svg>
+        </div>
+        <p class="giant-label" aria-hidden="true">FACEBOOK</p>
+      </section>
+
+      <section
+        class="panel panel--social"
+        id="instagram"
+        data-title="Instagram"
+        data-brand="instagram"
+        data-color="#e1306c"
+        data-side="right"
+        aria-labelledby="instagram-title"
+      >
+        <article class="social-copy social-copy--left">
+          <p class="eyebrow">03 · Visual frequency</p>
+          <h2 id="instagram-title">Instagram</h2>
+          <p class="social-copy__lead">
+            Fast visual notes, behind-the-scenes frames, and the details that
+            do not need a long caption.
+          </p>
+          <p class="social-copy__meta">Images · Reels · Process</p>
+          <a
+            class="signal-link"
+            href="https://instagram.com/9591r"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Instagram <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <div class="mesh-fallback" aria-hidden="true">
+          <span class="mesh-fallback__orb"></span>
+          <svg class="mesh-fallback__mark mesh-fallback__icon" viewBox="0 0 24 24" role="img" aria-label="Instagram">
+            <path fill-rule="evenodd" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0,0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0,0,1 7.8,2M7.6,4A3.6,3.6 0,0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0,0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0,0,1 18.5,6.75A1.25,1.25 0,0,1 17.25,8A1.25,1.25 0,0,1 16,6.75A1.25,1.25 0,0,1 17.25,5.5M12,7A5,5 0,0,1 17,12A5,5 0,0,1 12,17A5,5 0,0,1 7,12A5,5 0,0,1 12,7M12,9A3,3 0,0,0 9,12A3,3 0,0,0 12,15A3,3 0,0,0 15,12A3,3 0,0,0 12,9Z" />
+          </svg>
+        </div>
+        <p class="giant-label" aria-hidden="true">INSTAGRAM</p>
+      </section>
+
+      <section
+        class="panel panel--social"
+        id="youtube"
+        data-title="YouTube"
+        data-brand="youtube"
+        data-color="#ff2442"
+        data-side="left"
+        aria-labelledby="youtube-title"
+      >
+        <article class="social-copy social-copy--right">
+          <p class="eyebrow">04 · Long-form frequency</p>
+          <h2 id="youtube-title">YouTube</h2>
+          <p class="social-copy__lead">
+            Full stories, practical walkthroughs, and deep dives with room for
+            every important detail.
+          </p>
+          <p class="social-copy__meta">Videos · Tutorials · Stories</p>
+          <a
+            class="signal-link"
+            href="https://youtube.com/@9592r"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open YouTube <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        <div class="mesh-fallback" aria-hidden="true">
+          <span class="mesh-fallback__orb"></span>
+          <svg class="mesh-fallback__mark mesh-fallback__icon" viewBox="0 0 24 24" role="img" aria-label="YouTube">
+            <path fill-rule="evenodd" d="M21.582,6.057C21.312,4.937 20.4,4.137 19.266,4.137C16.896,4 12,4 12,4S7.104,4 4.734,4.137C3.6,4.137 2.688,4.937 2.418,6.057C2,8.196 2,12 2,12S2,15.804 2.418,17.943C2.688,19.063 3.6,19.863 4.734,19.863C7.104,20 12,20 12,20S16.896,20 19.266,19.863C20.4,19.863 21.312,19.063 21.582,17.943C22,15.804 22,12 22,12S22,8.196 21.582,6.057ZM10,15.464V8.536L16,12L10,15.464Z" />
+          </svg>
+        </div>
+        <p class="giant-label" aria-hidden="true">YOUTUBE</p>
+      </section>
+
+      <section
+        class="panel panel--social panel--last"
+        id="twitch"
+        data-title="Twitch"
+        data-brand="twitch"
+        data-color="#9146ff"
+        data-side="right"
+        aria-labelledby="twitch-title"
+      >
+        <article class="social-copy social-copy--left">
+          <p class="eyebrow">05 · Live frequency</p>
+          <h2 id="twitch-title">Twitch</h2>
+          <p class="social-copy__lead">
+            Live builds, spontaneous sessions, and real-time conversation
+            whenever the signal goes on air.
+          </p>
+          <p class="social-copy__meta">Live · Chat · Sessions</p>
+          <a
+            class="signal-link"
+            href="https://twitch.tv/9592r"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Twitch <span aria-hidden="true">↗</span>
+          </a>
+          <button class="back-to-start" type="button" data-scroll-start>
+            Return to signal 09 <span aria-hidden="true">↑</span>
+          </button>
+        </article>
+        <div class="mesh-fallback" aria-hidden="true">
+          <span class="mesh-fallback__orb"></span>
+          <svg class="mesh-fallback__mark mesh-fallback__icon" viewBox="0 0 24 24" role="img" aria-label="Twitch">
+            <path fill-rule="evenodd" d="M11.64,5.93H13.07V10.21H11.64ZM15.57,5.93H17V10.21H15.57ZM7,2L3.43,5.57V18.43H7V22L10.58,18.43H13.43L20.57,12V2ZM19.14,11.29L16.29,14.14H13.43L10.93,16.64V14.14H7.71V3.43H19.14Z" />
+          </svg>
+        </div>
+        <p class="giant-label" aria-hidden="true">TWITCH</p>
+      </section>
+    </main>
+
+    <noscript>
+      <p class="noscript-message">
+        JavaScript is disabled. Use the navigation links to explore the social
+        profiles.
+      </p>
+    </noscript>
+
+    <script src="js/main.bundle.js"></script>
+  </body>
+</html>

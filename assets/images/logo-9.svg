@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 828 1068" role="img" aria-labelledby="title">
+  <title id="title">Signal Zero Nine wireframe logo</title>
+  <defs>
+    <linearGradient id="nine-core" x1="120" y1="150" x2="700" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#166795" stop-opacity=".62"/>
+      <stop offset=".6" stop-color="#0d355f" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#10213f" stop-opacity=".12"/>
+    </linearGradient>
+    <path id="nine-shape" d="M769 492Q646 90 769 232Q384-33 539-33Q187 35 271-33Q83 224 98 107L282 224Q323 154 286 182Q404 127 359 127Q513 182 471 127Q563 384 563 248Q475 335 532 355Q372 315 418 315Q137 416 224 315Q58 642 58 507Q144 877 58 781Q407 984 239 984Q694 827 602 984Q769 492 769 699M416 476Q525 521 488 476Q563 632 563 566Q521 764 563 709Q403 826 474 826Q297 773 337 826Q258 649 258 720Q295 530 258 577Q416 476 339 476Z"/>
+    <clipPath id="nine-clip" clipPathUnits="userSpaceOnUse">
+      <use href="#nine-shape" transform="translate(0 1017) scale(1 -1)"/>
+    </clipPath>
+    <filter id="nine-glow" x="-20%" y="-15%" width="140%" height="130%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(0 1017) scale(1 -1)">
+    <use href="#nine-shape" fill="url(#nine-core)" fill-rule="evenodd"/>
+    <g clip-path="url(#nine-clip)" opacity=".78">
+      <g fill="none" stroke="#4be8ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".56">
+        <path d="M30 190 778 915M20 380 770 1040M70 65 748 800M92 955 760 298M46 575 782 667M180 30 655 992M320 0 738 680M76 780 706 80M130 440 710 470"/>
+      </g>
+      <g fill="#d8fbff" filter="url(#nine-glow)">
+        <circle cx="144" cy="774" r="19"/><circle cx="224" cy="416" r="17"/>
+        <circle cx="286" cy="182" r="15"/><circle cx="404" cy="127" r="18"/>
+        <circle cx="532" cy="355" r="16"/><circle cx="563" cy="632" r="18"/>
+        <circle cx="474" cy="826" r="16"/><circle cx="258" cy="649" r="15"/>
+        <circle cx="282" cy="224" r="14"/><circle cx="563" cy="384" r="14"/>
+      </g>
+    </g>
+    <use href="#nine-shape" fill="none" stroke="#69edff" stroke-width="22" stroke-linejoin="round" filter="url(#nine-glow)"/>
+  </g>
+</svg>
